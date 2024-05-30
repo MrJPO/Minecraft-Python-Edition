@@ -415,6 +415,7 @@ if world_type == "super_flat":
     amp = 0
 else:
     amp = 5
+
 for i in range(terrainWidth*terrainWidth):
     voxel = Voxel(texture=blocks[1][2])
     voxel.x = floor(i/terrainWidth)
@@ -422,7 +423,10 @@ for i in range(terrainWidth*terrainWidth):
     voxel.y = floor((noise([voxel.x/freq, voxel.z/freq]))*amp)
     # voxel.parent = terrain
     terrainblocks.append(voxel)
-
+    #print(f'{voxel} - {voxel.x} - {voxel.z} - {voxel.y}')
+f = open("demofile2.txt", "a")
+f.write(str(terrainblocks))
+f.close()
 if trees == True:
     genTrees()
        

@@ -1,12 +1,12 @@
 {
-    "trees": true,
+    "trees": false,
     "showInventory": true,
-    "sounds": true,
+    "sounds": false,
     "directionalShaders": false,
     "fps_counter_enabled": true,
     "treesCount": 5,
     "parkour_mode": false,
-    "land_size": 15,
+    "land_size": 4,
     "world_type": "default",
     "default_block": "stone"
 }
